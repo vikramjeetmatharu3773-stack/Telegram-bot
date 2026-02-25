@@ -1,10 +1,10 @@
-import logging
+ logging
 import requests
 from bs4 import BeautifulSoup
 from typing import List, Dict
 
 from config import DUCKDUCKGO_SEARCH_URL, USER_AGENT
-from .link_validator import filter_links
+from link_validator import filter_links
 
 logger = logging.getLogger(__name__)
 
