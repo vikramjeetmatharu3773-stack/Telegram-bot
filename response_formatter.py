@@ -1,5 +1,5 @@
 from typing import Dict, List
-from utils.helpers import extract_domain
+from helpers import extract_domain
 
 
 def format_results_message(original_query: str, classification: Dict, results: List[Dict]) -> str:
