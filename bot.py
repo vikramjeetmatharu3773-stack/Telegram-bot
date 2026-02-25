@@ -5,13 +5,13 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
 from config import TELEGRAM_BOT_TOKEN, BOT_NAME
-from ai_core.intent_classifier import classify_intent
-from ai_core.query_parser import enhance_query
-from ai_core.safety_filter import check_query_safety
-from ai_core.response_formatter import format_results_message
-from search_engine.web_search import search
-from utils.rate_limiter import RateLimiter
-from utils.logger import setup_logging
+from intent_classifier import classify_intent
+from query_parser import enhance_query
+from safety_filter import check_query_safety
+from response_formatter import format_results_message
+from web_search import search
+from rate_limiter import RateLimiter
+from logger import setup_logging
 
 load_dotenv()
 setup_logging()
